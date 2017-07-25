@@ -1,0 +1,119 @@
+doctype html
+//
+  Arpitaben Patel(7389273)
+  Manpreet Kaur Sidhu(7448335)
+html
+  head
+    title SharkEvent
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    link(rel='stylesheet', href='/css/mycss.css')
+    link(rel='stylesheet', href='/css/bootstrap-social.less')
+    link(href='/css/bootstrap-social.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700', rel='stylesheet', type='text/css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(src='javascripts/skel.min.js')
+    script(src='javascripts/skel-panels.min.js')
+    script(src='javascripts/init.js')
+  body.homepage
+    ul.topnav
+      li
+        a(href='/') SharkEvent
+      li
+        a(href='Eventlist') Events
+      li.leftmenu
+        a(href='signup') Sign Up
+      li.leftmenu
+        a(href='login') Login
+      li.icon
+        a(href='javascript:void(0);', onclick='myFunction()') ☰
+    #header
+      .container
+        #logo
+          a(href='signup')
+            button.eventbutton Promote Event
+    #main
+      // There will be a list of latest uocpming events
+      .container
+        header
+          h2 Upcoming Events
+        br
+        .row
+          .3u.backevent
+            section
+              span
+                h3 Holi Festival
+                | $5
+              a.image.full(href='#')
+                img(src='images/pics01.jpg', alt='')
+              p Friday,1st Oct. 7th, 6pm-1am
+              a.button(href='#') Buy Ticket
+          .3u.backevent
+            section
+              span
+                h3 Holi Festival
+                | $5
+              a.image.full(href='#')
+                img(src='images/pics11.jpg', alt='')
+              p Friday,1st Oct. 7th, 6pm-1am
+              a.button(href='#') Buy Ticket
+          .3u.backevent
+            section
+              span
+                h3 Holi Festival
+                | $5
+              a.image.full(href='#')
+                img(src='images/pics12.jpg', alt='')
+              p Friday,1st Oct. 7th, 6pm-1am
+              a.button(href='#') Buy Ticket
+          .3u.backevent
+            section
+              span
+                h3 Holi Festival
+                | $5
+              a.image.full(href='#')
+                img(src='images/pics13.jpg', alt='')
+              p Friday,1st Oct. 7th, 6pm-1am
+              a.button(href='#') Buy Ticket
+        .divider  
+      // There will be a list of category of events so user can directly go to event by choosing event
+      .container
+        header
+          h2 Events By Category
+        br
+        .row
+          .3u.backevent
+            section
+              a.image.full(href='#')
+                img(src='images/pics01.jpg', alt='')
+          .3u.backevent
+            section
+              a.image.full(href='#')
+                img(src='images/pics11.jpg', alt='')
+          .3u.backevent
+            section
+              a.image.full(href='#')
+                img(src='images/pics12.jpg', alt='')
+          .3u.backevent
+            section
+              a.image.full(href='#')
+                img(src='images/pics13.jpg', alt='')
+        .divider  
+        // There will be a news rss feed
+    #copyright
+      h1 Follow Us
+      .container
+        button.btn.btn-facebook
+          i.fa.fa-facebook
+          |   Connect with Facebook
+        button.btn.btn-twitter
+          i.fa.fa-twitter
+          |   Connect with Twitter
+        br
+        a.foolink(href='/') Events
+        a.foolink(href='/') News
+        a.foolink(href='/') Calender
+        a.foolink(href='/') Site Map
+        a.foolink(href='/') Contact Us

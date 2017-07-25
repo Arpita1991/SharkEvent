@@ -1,0 +1,26 @@
+// Arpitaben Patel(7389273)
+// Manpreet Kaur Sidhu(7448335)
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/mycss.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(src='javascripts/skel.min.js')
+    script(src='javascripts/skel-panels.min.js')
+    
+  body#mainBack
+     ul.topnav
+      li
+        a(href='/') SharkEvent
+      li
+        a(href='/Eventlist') Events
+      li.leftmenu
+        a(href='#') Help
+      li.icon
+        a(href='javascript:void(0);', onclick='myFunction()') ☰
+
+    block content 

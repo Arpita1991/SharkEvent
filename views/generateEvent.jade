@@ -1,0 +1,61 @@
+// Arpitaben Patel(7389273)
+// Manpreet Kaur Sidhu(7448335)
+
+extends layout
+
+block content 
+ .container
+      h2.myhead Generate Event
+      .panel.panel-default
+        .panel-body    
+            .bs-example
+                form(method="post",action="/organizeEvent",enctype="multipart/form-data")
+                    h2 Event Details
+                    .form-group
+                    label Event Title
+                    input#inputEName.form-control(type="text",name="Ename",placeholder="Leena",required)
+                    .form-group
+                    label Location
+                    textarea#inputLocation.form-control(name="Elocation",required)
+                    .form-group
+                    label Starts
+                    input#inputStartdate.form-control(type='date', name="StartDate") 
+                    input#inputstarttime.form-control(type='time', name="StartTime") 
+                    .form-group
+                    label Ends
+                    input#inputEnddate.form-control(type='date', name="EndDate") 
+                    input#inputEndtime.form-control(type='time', name="EndTime") 
+                    .form-group
+                    label Event Image
+                    input#inpuImage.form-control(type="file",name="images")
+                    .form-group
+                    label Ticket Details
+                    input#inputTicketName.form-control(type="text",name="TName",placeholder="Ticket Name",required)
+                    input#inputQuantity.form-control(type="text",name="TQuantity",placeholder="Quantity Available",required)
+                    input#inputPrice.form-control(type="text",name="Tprice",placeholder="Price",required)
+                    h2 Additional Settings
+                    fieldset.form-group
+                    label Event Type
+                    select#Etype.form-control(name="Etype")
+                       option(value="Concert") Concert/Performance
+                        option(value="Meeting") Meeting or Networking Event
+                        option(value="Game") Game
+                        option(value="Dinner") Dinner
+                        option(value="Festival") Festival  
+                    fieldset.form-group
+                    label Event Type
+                    select#Etopic.form-control(name="Etopic")
+                        option(value="Life Style") Home and Life Style 
+                        option(value="Sports") Sports
+                        option(value="Food&Drink") Food and Drink
+                        option(value="Cultural") Cultural
+                        option(value="Social") Social 
+                    h2 Remaining Ticket
+                    .form-group
+                    .checkbox
+                    label
+                        input(type='checkbox',name="showtickets")
+                        |  Show the  Number of Tickets remaining on registration page
+                    .form-group    
+                    button.btn.btn-primary.subbutton(type='submit') Make Your Event Live
+                    button.btn.btn-primary.subbutton(type='submit') Save

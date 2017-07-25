@@ -1,0 +1,21 @@
+// Arpitaben Patel(7389273)
+// Manpreet Kaur Sidhu(7448335)
+
+extends layout
+
+block content 
+ .container
+      h2.myhead Login Here
+      .panel.panel-default.loginpanel
+        .panel-body    
+            .bs-example
+                form(name="LoginForm",method="post",action="/authenticateUser")
+                    
+                    .form-group
+                    label First Name
+                    input#inputName.form-control(type="text",name="username",placeholder="Leena",required)
+                    .form-group
+                    label Password
+                    input#inputPassword.form-control(type='password', name="password")
+                    .form-group    
+                    button.btn.btn-primary.subbutton(type='submit') Login 

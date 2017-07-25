@@ -1,0 +1,40 @@
+// Arpitaben Patel(7389273)
+// Manpreet Kaur Sidhu(7448335)
+
+extends layout
+
+block content 
+ .container
+      h2.myhead Sign Up
+      .panel.panel-default
+        .panel-body    
+            .bs-example
+                form(name="CreateUSerForm",method="post",action="saveUserData")
+                    h2 Personal Detail
+                    .form-group
+                    label First Name
+                    input#inputName.form-control(type="text",name="FirstName",placeholder="Leena",required)
+                    .form-group
+                    label Email
+                    input#inputEmail.form-control(type='email',name="Email", placeholder='leena@gmail.com',required)
+                    .form-group
+                    label Password
+                    input#inputPassword.form-control(type='password', name="Password")
+                    h2 Organization Detail
+                    .form-group
+                    label Name
+                    input#inputName.form-control(type="text",name="Oname",placeholder="Toyota")
+                    .form-group
+                    label Description
+                    textarea#inputDesc.form-control(name="Odesc")
+                    .form-group
+                    label Phone Number
+                    input#inputNumber.form-control(type='number',name="Onumber",placeholder='226-606-9845')
+                    .form-group
+                    label Size
+                    input#inputSize.form-control(type='text', name="Osize",placeholder='10')
+                    .form-group
+                    label Address
+                    textarea#inputDesc.form-control(name="Oaddress")
+                    .form-group    
+                    button.btn.btn-primary.subbutton(type='submit') Create Profile
